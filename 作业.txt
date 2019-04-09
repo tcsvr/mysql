@@ -1,0 +1,19 @@
+练习1）
+SQL (structured Query Language) 结构化查询语言;
+SQL命令可以分类以下三大类别：
+DML(Data Manipulation Language 数据处理语言）：
+DDL(Data Definition Language 数据定义语言）：
+DCL(Data Control Language 数据控制语言）：
+以上内容抄5次
+SQL命令可以分类以下三大类别：
+	 DML(Data Manipulation Language 数据处理语言）：这类命令主要包括 SELECT、INSERT、UPDATE、DELETE等用来从数据表读出数据，把数据存入数据表或是对数据表里的现有记录进行修改的命令;
+	DDL(Data Definition Language 数据定义语言）：这类命令主要包括CREATE TABLE、
+	ALTER TABLE 等用来定义和改变数据库结构的命令;
+	DCL(Data Control Language 数据控制语言）：这类命令主要包括GRANT、REVOKE以及另外几个用来帮助人们设置和调整MySQL访问控制机制的SQL命令;
+以上内容抄一次。
+练习2）
+把今天的SQL语句翻译成自己理解的中文；
+练习3）
+把今天讲的SQL语句练习熟细；
+练习4）
+预习后面的内容；

@@ -1,0 +1,88 @@
+1  先查看MySQL安装目录下的bin目录是否添加到环境变量，没有就 再添加上
+	加环境变量的步骤：
+	计算机=>右击属性=>高级系统设置=>高级（找环境变量）=>找到path双击，在最后面加分号 后面 加上MySQL的bin目录路径=>点击确定
+2  打开命令提示窗口（或者Win + R）输入 （cmd）
+3  输入mysql -u root -p回车。输入密码 再回车 进入MySQL命令行模式
+
+查看数据库           SHOW DATABASES加分号，点回车
+
+切换数据库就是进去   USE（使用） dbname  小写的是自己数据库的名字
+
+        （ 接着显示    database changed(被改变)）
+
+查看数据表           SHOW TABLES
+
+查看表的数据         SELECT * FROM tbname  小写的是自己数据表的名字
+
+  如果没有内容就显示 empty（空）set（设置）<0.00 sec>
+
+创建数据表           CREATE TABLE tbname(
+			id int not null auto_increment,
+			title varchar(20),
+			content text,
+			category_id int,
+			hits int,
+			PRIMARY KEY(id)
+			);
+
+
+
+exit  退出
+
+show 显示  打开
+
+databases  数据库
+
+use 使用
+
+changed  改变  变化
+
+
+INSERT  插入  增加
+
+SELECT  查找
+
+UPDATE  改变
+
+DELETE  删除
+
+增加内容
+	INSERT INTO user (username, password) VALUES (‘admin’, ‘123456’)
+	INSERT INTO user (username, password) VALUES (‘admin’, ‘123456’)
+
+
+
+修改内容
+	UPDATE `bookstore`.`author` SET `aname` = '杨贤' WHERE `author`.`aid` =1;
+	UPDATE `数据库`.`数据表` SET `字段` = '杨贤' WHERE `数据表`.`aid` =1;
+
+删除内容
+	DELETE FROM user WHERE uid = 10
+	DELETE FROM 数据表 WHERE uid = 10
+
+查找
+	SELECT * FROM 数据表
+
+
+我要找到 里面带数字的
+
+模糊查询 搜索的关键字 前后加%   前有只有一个字符的  加了一个下划线；
+
+limit  限制
+regexp  MySQL连接正则
+
+
+\G 命令行里 会变成纵向显示
+
+增 删 查 改
+增 insert into 这张表（字段）values（）；
+删 delete from 这张表 where id=?
+查 select * from 这张表；
+改 update 这张表 set 字段=‘新值’ where id=?
+
+MYSQL 乱码；
+show variables like'%char%';
+set character_set_results=gb2312;
+mysql>SET charset gbk;(mysql>SET charset UTF8);
+mysql --default-character-set=gbk -uroot -proot(乱码和不对齐问题 
+建一个 bat 文件)
