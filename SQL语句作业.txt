@@ -1,4 +1,4 @@
-有一张商品表
+有一张商品表 emp
 字段有：
 good_id     商品ID
 good_name   商品名称
@@ -9,13 +9,28 @@ good_type   商品类型
 
 需求：
 1、我要从最低的价格来浏览商品
+SELECT * FROM emp ORDER BY good_price ASC;
+
 2、我要看所有白色(1代表白色) 手机
+SELECT good_name FROM emp WHERE good_color = 1;
+
 3、我要看白色(1代表白色) 手机(mobile) 商品的价格
+SELECT good_name,good_price FEOM EMP WHERE goodd_color = 1 ; 
+
 4、我要看红色(2代表红色) 手机(mobile) 最便宜的5款商品
+SELECT * FROM emp WHERE good_color = 2 ORDER BY good_price ASC LIMIT 5;
+
 5、我要看价格在1000以上，2000以下的手机
+SHELECT * FROM emp WHERE good_price >1000 AND good_price < 2000;
+
 6、我看一下这个商店价格最高的5款手机是什么手机。
+SELECT * FROM emp ORDER BY good_price DESC LIMIT 5;
+
 7、我看下这个商店有没有iPhone手机。
+SELECT * FROM emp WHERE good_name LIKE '%iPhone%';
+
 8、我看下这个商店的iPhone最贵的手机有那些。
+SELECT * FROM emp WHERE good_type = iPhone ORDER BY good_price DESC LIMIT 1;
 
 
 

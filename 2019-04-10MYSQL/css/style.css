@@ -1,0 +1,165 @@
+/* Space out content a bit */
+body {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+
+
+.chat-panel .media-img img {
+    border: 1px solid #ccc;
+    margin-right: 8px;
+    max-width: 70px;
+}
+.chat-panel .media-heading {
+    color: #777;
+    font-weight: 600;
+}
+.chat-panel .media-timestamp {
+    color: #999;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 10px;
+}
+.chat-panel .media-content {
+    background-image: linear-gradient(to bottom, #ffffff 1%, #f3f3f3 100%);
+    background-repeat: repeat-x;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    color: #777;
+    line-height: 25px;
+    padding: 10px 15px;
+}
+.media, .media .media {
+    margin-top: 20px;
+}
+
+
+.panel {
+    border-color: #c9c9c9;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.33);
+    margin-bottom: 35px;
+    overflow: hidden;
+    position: relative;
+}
+.panel-heading {
+    background-color: #f0f0f0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.1) 100%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+    border-color: #cccccc rgba(0, 0, 0, 0.19) rgba(0, 0, 0, 0.18);
+    border-radius: 3px 3px 0 0;
+    color: #666;
+    font-size: 14px;
+    font-weight: 700;
+    height: 57px;
+    line-height: 33px;
+    overflow: hidden;
+    padding: 10px 20px 9px;
+    position: relative;
+    text-shadow: 0 1px #ffffff;
+}
+.panel-title {
+    float: left;
+    font-size: 14px;
+    padding-top: 1px;
+    text-shadow: 0 1px #ffffff;
+}
+.panel-heading .panel-field {
+    max-width: 140px;
+}
+.panel-body-title {
+    border-bottom: 1px solid #ddd;
+    color: #666;
+    line-height: 18px;
+    margin-bottom: 20px;
+    padding: 10px 0 15px;
+}
+.panel-title-sm {
+    color: #888;
+    font-size: 12px;
+    font-weight: 700;
+    padding-right: 5px;
+    text-shadow: 0 1px #ffffff;
+}
+
+.pagination > .active > a, .pagination > .active > a:hover {
+    background-color: #e7e7e7;
+    border-color: #ddd;
+    color: #337ab7;
+}
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

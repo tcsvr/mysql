@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>我的留言本</title>
+<!-- Bootstrap core CSS -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" 
+      data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">我的留言本</a>
+    </div>
+    
+  </div>
+  </nav>
+
+  <div class="container">
+  <!-- $username.'||'.$content.'||'.$img.'||'.$time -->
+    <!-- ======= -->
+    <?php foreach($emp as $v){ ?>
+        <div class="media margin-top-lg chat-panel">
+      <div class="media-img pull-left"> <img alt="avatar" class="img-responsive" src="<?php echo $v[l_src] ?>"> </div>
+      <div class="media-body">
+        <div class="media-content">
+          <h4 class="media-heading"><?php echo $v[l_h] ?> :</h4>
+          <p class="media-timestamp"><?php echo date("Y-m-d ",$v[lytime]) ?></p>
+          <?php echo $v[lytxt] ?>
+ </div>
+      </div>
+    </div>
+    <?php } ?>
+<!-- ======= -->
+      
+    
+    
+
+    <nav class="text-center">
+      <ul class="pagination">
+        <li class="disabled"><a aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+     </ul>
+    </nav>
+
+
+    <div class="panel">
+      <div class="panel-heading">
+        <div class="panel-title"> <span class="glyphicon glyphicon-pencil"></span> 我要留言 </div>
+      </div>
+      <div class="panel-body">
+        <form action="http://localhost/2019-04-10MYSQL/task.php" method="post" class="form-horizontal" enctype="multipart/form-data">
+          <div class="form-group">
+            <label class="col-lg-2 control-label" for="inputStandard">图片:</label>
+            <div class="col-lg-10">
+              <span class="form-control" style="padding:2px;">
+              <input type="file" placeholder="" id="inputStandard" name="upload"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-2 control-label" for="inputStandard">昵称:</label>
+            <div class="col-lg-10">
+              <input type="text" placeholder="" class="form-control" id="inputStandard" name="username">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="textArea" class="col-lg-2 control-label">内容:</label>
+            <div class="col-lg-10">
+              <textarea rows="3" id="textArea" class="form-control" name="content"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="textArea" class="col-lg-2 control-label"></label>
+            <div class="col-lg-10">
+              <input type="submit" value="提交" name="dosubmit" class="submit btn btn-info">
+            </div>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; wengdo 2015</p>
+    </footer>
+
+  </div> <!-- /container -->
+</body>
+</html>
