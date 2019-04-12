@@ -1,0 +1,75 @@
+PHP STUDY    127.0.0.1(本地主机/localhost/root 默认密码root）
+
+http://www.9iqu.com/
+
+http://localhost/phpMyAdmin/index.php?db=metinfao&token=59529c59aa0f52d9819e23fd76b97b68
+
+http://www.phpcms.cn/
+
+http://localhost/phpcms/index.php?m=admin&c=index&pc_hash=bfFAac
+
+http://localhost/phpcms/index.php?
+
+http//www.wodrpress.org/
+
+http://localhost/wordpress/wp-admin/profivle.php
+
+opencart            upload   
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/HTML    (Html 学习 网站）
+
+https://v3.bootcss.com/getting-started/#download     (Html 起步 框架)
+https://www.bootcdn.cn/
+
+https://www.iconfont.cn 
+https://fontawesome.com/start    (开源图标)
+
+http://localhost/upload/admin/index.php?route=common/dashboard&token=TfsZOxdEob97n2reBKGAuYmidHODcyOk
+
+csshop  (改为5.6phpde 版本    、改时区   （date   PRC)
+
+XAMPP
+
+http://n9ziyc.axshare.cn/%E7%BD%91%E7%AB%99%E9%A6%96%E9%A1%B5.html     (axure 商场)
+
+Bt-Panel-URL: http://111.230.131.160:8888/5a577d71                     (bt deault)
+username: um1ptaeh
+password: 29644013
+
+Bt-Panel: http://129.28.110.139:8888/f3565b01
+username: l47zetvi
+password: 466ea5d9
+
+https://github.com/tcsvr/tcs.git
+
+git remote add origin git@github.com:tcsvr/tcs.git
+ git push -u origin master
+
+tab （代码 补全）
+
+merge pull (代码补全）
+cat (看内容）
+
+
+git remote -v
+git remote rm origin 
+ssh-keygen -t rsa -C "1484552626@qq.com"
+git remote set-url origin git+ssh
+
+git init
+git clone
+
+cd 
+touch （未跟踪 U）
+vi
+vim
+re -rf (删除)
+q (退出）
+wq(保存 退出编辑状态）
+Ctrl + C (强制退出）
+git status (文件状态）
+git add （缓存 A）
+gti commit )-(m)（本地仓库 M）
+git log
+
