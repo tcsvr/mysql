@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文豆-案例详情页</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<div class="container">
+		<a name="Top"></a>
+		<header>
+			<div class="head_nav">
+				<a href="index.html">
+					<img src="images/logo_01.png" alt="">
+				</a>
+				<nav>
+					<a href="index.html">网站首页</a>
+					<a href="index.html">案例展示</a>
+					<a href="index.html">关于我们</a>
+					<a href="index.html">资讯动态</a>
+					<a href="index.html">联系我们</a>
+				</nav>
+			</div>
+			<div class="banner">
+				<img src="images/banner_02.jpg" alt="">
+			</div>
+		</header>
+		<div class="main_nav">
+			<nav>
+				<a href=""><img src="images/new_icon_01.png" alt=""></a>
+				<a href="">案例展示</a>
+				&gt;
+				<a href="">企业品牌网站</a>
+				&gt;
+				<a href=""><span>SIMIFLY</span></a>
+			</nav>
+			<h1>SIMIFLY</h1>
+			<p>
+				<a href="">
+					<img src="images/new_icon_02.png" alt="">
+				</a>
+				<a href="">
+					<img src="images/new_icon_03.png" alt="">
+				</a>
+				<a href="">
+					<img src="images/new_icon_04.png" alt="">
+				</a>
+			</p>
+		</div>
+		<div class="main">
+			<div class="main_con">
+				<!-- <img src="images/case_ditailed_01.jpg" alt="">
+				<img src="images/case_ditailed_02.jpg" alt="">
+				<img src="images/case_ditailed_03.jpg" alt="">
+				<img src="images/case_ditailed_04.jpg" alt="">
+				<img src="images/case_ditailed_05.jpg" alt=""> -->
+				<div class="main_bot">
+					<a href="javascript:;">
+						<img src="images/detailed_prev.png" alt="">
+					</a>
+					<a href="javascript:;">
+						<img src="images/detailed_next.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="contact">
+				<div class="con_left">
+					<a href="index.html">
+						<img src="images/wdlogo.png" alt="">
+					</a>
+					<p>我们全心全意为你提供最优质的服务</p>
+					<span>www.wengdo.cn</span>
+				</div>
+				<div class="con_center">
+					<p>
+						分享文章到：
+						<a href="">
+							<img src="images/new_icon_02.png" alt="">
+						</a>
+						<a href="">
+							<img src="images/new_icon_03.png" alt="">
+						</a>
+						<a href="">
+							<img src="images/new_icon_04.png" alt="">
+						</a>
+					</p>
+				</div>
+				<div class="con_right">
+					<img src="images/detailed_ew.png" alt="">
+				</div>
+			</div>
+			<div class="foot">
+				<p>粤ICP备12022584号-3</p>
+				<p>广州文豆网络科技有限公司 Copyright 2009-2015 ,All Rights Reserved wengdo</p>
+			</div>
+		</footer>
+	</div>
+	<aside>
+		<div></div>
+		<p>
+			<span>020-66668888</span>
+			<a href="">
+				<img src="images/icon_01.png" alt="">
+			</a>
+		</p>
+		<p>
+			<span>66668888</span>
+			<a href="">
+				<img src="images/icon_02.png" alt="">
+			</a>
+		</p>
+		<p>
+			<span>人才招聘</span>
+			<a href="">
+				<img src="images/icon_03.png" alt="">
+			</a>
+		</p>
+		<p>
+			<span>回到顶部</span>
+			<a href="#Top">
+				<img src="images/icon_04.png" alt="">
+			</a>
+		</p>
+	</aside>
+</body>
+</html>
+<script>
+	// 侧边导航条（右边）
+	var aside=document.getElementsByTagName('aside')[0];
+	var p=aside.getElementsByTagName('p');
+	var span=aside.getElementsByTagName('span');
+
+	for(var i=0; i<p.length; i++){
+		p[i].onmouseover=function(){
+			this.className='box_bg';
+		}
+		p[i].onmouseout=function(){
+			this.className='';
+		}
+	}
+</script>

@@ -8,9 +8,7 @@ $sql = "SELECT * FROM wd_nav WHERE n_isshow = 1";
 $nav = getAll($sql);
 $sql = "SELECT * FROM wd_banner WHERE b_isshow = 1";
 $banner = getAll($sql);
-$sql = "SELECT * FROM wd_partner";
-$partner = getAll($sql);
-// pre($partner);
+// pre($banner);
 
 
 
