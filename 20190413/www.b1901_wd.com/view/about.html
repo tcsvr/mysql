@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文豆-关于我们</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/playImg.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/playImg.css">
+</head>
+<body>
+	<div class="container">
+		<?php include('view/common/header.html'); ?>
+		<div class="main_nav">
+			<nav>
+				<a href="about.html"><img src="<?php echo _IMG_; ?>new_icon_01.png" alt=""></a>
+				<a href="about.html"><span>关于我们</span></a>
+			</nav>
+			<h1>SIMIFLY</h1>
+		</div>
+		<div class="main">
+			<?php echo $about['a_content'] ?>
+		</div>
+		<footer>
+			<div class="contact">
+				<div class="con_left">
+					<a href="index.html">
+						<img src="<?php echo _IMG_; ?>wdlogo.png" alt="">
+					</a>
+					<p>我们全心全意为你提供最优质的服务</p>
+					<span>www.wengdo.cn</span>
+				</div>
+				<div class="con_center">
+					<p>
+						分享文章到：
+						<a href="">
+							<img src="<?php echo _IMG_; ?>new_icon_02.png" alt="">
+						</a>
+						<a href="">
+							<img src="<?php echo _IMG_; ?>new_icon_03.png" alt="">
+						</a>
+						<a href="">
+							<img src="<?php echo _IMG_; ?>new_icon_04.png" alt="">
+						</a>
+					</p>
+				</div>
+				<div class="con_right">
+					<img src="<?php echo _IMG_; ?>detailed_ew.png" alt="">
+				</div>
+			</div>
+			<div class="foot">
+				<p>粤ICP备12022584号-3</p>
+				<p>广州文豆网络科技有限公司 Copyright 2009-2015 ,All Rights Reserved wengdo</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+<!-- 导航滚动条 -->
+<script src='js/nav_scroll.js'></script>

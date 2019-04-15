@@ -12,170 +12,57 @@
 <body>
 	<div class="container">
 		<a name="Top"></a>
-		<header>
-			<div class="head_nav" id="head_scroll">
-				<a href="index.html">
-					<img src="images/logo_01.png" alt="">
-				</a>
-				<nav>
-					<?php foreach ($nav as $v) { ?>
-						<a href="<?php echo $v['n_link']; ?>">
-							<?php echo $v['n_name']; ?> 
-						</a>
-					<?php } ?>
-				</nav>
-			</div>
-			<div class="banner">
-				<div id="con">
-					<ul>
-						<?php foreach ($banner as $k=>$v) { ?>
-							<?php if($k==0){ ?>
-								<li><img id="img_one" src="<?php echo $v['b_img'] ?>" alt=""></li>
-							<?php }else{ ?>
-								<li><img src="<?php echo $v['b_img'] ?>" alt=""></li>
-						<?php }} ?>
-					</ul>
-					<a id="prev" href="javascript:;"><img src="./images/ban_prev.png" alt=""></a>
-					<a id="next" href="javascript:;"><img src="./images/ban_next.png" alt=""></a>
-					<ol>
-						<!-- <li class="oli"></li>
-						<li></li>
-						<li></li>
-						<li></li> -->
-					</ol>
-				</div>
-			</div>
-		</header>
+		<?php include('view/comon/header.html'); ?>
 		<div class="service">
 			<h1>我们的服务<br><span>Services</span></h1>
 			<i></i>
 			<p>我们为您提供，最精致的服务，最全面的技术</p>
 			<ul id="service">
-				<li>
-					<a href="" class="ser_a">
-					<img src="images/server_01.jpg" alt="">
-					<br>
-					高品质网站<br>解决方案
-					</a>
-				</li>
-				<li>
-					<a href="">
-					<img src="images/server_02.gif" alt="">
-					<br>
-					电子商务平台<br>解决方案
-					</a>
-				</li>
-				<li>
-					<a href="">
-					<img src="images/server_03.gif" alt="">
-					<br>
-					PHP网站开发人才<br>解决方案
-					</a>
-				</li>
-				<li>
-					<a href="">
-					<img src="images/server_04.gif" alt="">
-					<br>
-					网站创意设计<br>解决方案
-					</a>
-				</li>
-				<li>
-					<a href="">
-					<img src="images/server_05.gif" alt="">
-					<br>
-					微信应用公众号开发<br>解决方案
-					</a>
-				</li>
-				<li>
-					<a href="">
-					<img src="images/server_06.gif" alt="">
-					<br>
-					移动端应用APP开发<br>解决方案
-					</a>
-				</li>
+				<?PHP foreach ($service as $k => $v) { ?>
+				<?php if($k==0) { ?>
+					<li>
+						<a href="" class="ser_a">
+						<img src="<?php echo $v['s_img1'] ?>" alt="">
+						<?php echo $v['s_title'] ?>
+						</a>
+					</li>
+				<?php } else{ ?>
+					<li>
+						<a href="">
+						<img src="<?php echo $v['s_img2'] ?>" alt="">
+						<?php echo $v['s_title'] ?>
+						</a>
+					</li>
+				<?php } } ?>
 			</ul>
 		</div>
 		<div class="case">
 			<h1>案例展示<br><span>Cases</span></h1>
 			<i></i>
 			<nav>
-				<a href="case_list.html" class="case_a">企业品牌网站</a>
-				<a href="case_list.html">电子商务网站</a>
-				<a href="case_list.html">门户型网站</a>
-				<a href="case_list.html">管理系统</a>
-				<a href="case_list.html">团购</a>
+				<?php foreach($category as $v) { ?>
+				<?php if($v['ca_id']==$caid){  ?>
+				<a href="?caid=<?php echo $v['ca_id'] ?>" class="case_a"><?php echo $v['ca_name'] ?></a>
+				<?php } else { ?>
+				<a href="?caid=<?php echo $v['ca_id'] ?>"><?php echo $v['ca_name'] ?></a>
+				<?php } } ?>
 			</nav>
+
+
+
 			<ul>
+				<?PHP foreach ($case as $k => $v) { ?>
 				<li>
 					<a href="case.html">
-						<img src="images/case_01.jpg" alt="">
+						<img src="<?php echo $v['c_img'] ?>" alt="">
 						<div>
 							<img src="images/look.png" alt="">
 							<br>
-							simifly---Home
+							<?php echo $v['c_id'].$v['c_title'] ?>
 						</div>
 					</a>
 				</li>
-				<li>
-					<a href="case.html">
-						<img src="images/case_02.jpg" alt="">
-						<div>
-							<img src="images/look.png" alt="">
-							<br>
-							simifly---Home
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="case.html">
-						<img src="images/case_03.jpg" alt="">
-						<div>
-							<img src="images/look.png" alt="">
-							<br>
-							simifly---Home
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="case.html">
-						<img src="images/case_04.jpg" alt="">
-						<div>
-							<img src="images/look.png" alt="">
-							<br>
-							simifly---Home
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="case.html">
-						<img src="images/case_05.jpg" alt="">
-						<div>
-							<img src="images/look.png" alt="">
-							<br>
-							simifly---Home
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="case.html">
-						<img src="images/case_06.jpg" alt="">
-						<div>
-							<img src="images/look.png" alt="">
-							<br>
-							simifly---Home
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="case.html">
-						<img src="images/case_07.jpg" alt="">
-						<div>
-							<img src="images/look.png" alt="">
-							<br>
-							simifly---Home
-						</div>
-					</a>
-				</li>
+				<?php } ?>
 				<li>
 					<a href="case.html">
 						<img src="images/case_08.jpg" alt="">
@@ -188,10 +75,10 @@
 			<h1>关于我们<br><span>About us</span></h1>
 			<i></i>
 			<p class="about_p1">不用担心距离, 文豆就在你身边</p>
-			<p class="about_p2">文豆网络是一家提供互联网服务的高科技集团公司集策划、设计、前端优化、研发、测试、系统运维、网站推广、运营、团队外包及互联网人才培养为一体的成熟业务体系......</p>
+			<p class="about_p2"><?php  echo mb_substr($about,0,78,'utf-8'); ?>......</p>
 			<img src="images/point.png" alt="">
 			<br>
-			<a href="">点击查看</a>
+			<a href="about.php">点击查看</a>
 		</div>
 		<div class="news">
 			<a href=""><img id="new_more" class="new_more" src="images/icon.png" alt=""></a>
@@ -237,66 +124,13 @@
 			<i></i>
 			<p>他们选择了文豆，我们的专业合作伙伴</p>
 			<ul>
-				<li>
-					<a href="">
-						<img src="images/partner_01.jpg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/partner_02.jpg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/partner_03.jpg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/partner_04.jpg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/partner_05.jpg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/partner_06.jpg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/partner_07.jpg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/partner_08.jpg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/partner_09.jpg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/partner_010.jpg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/partner_011.jpg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/partner_012.jpg" alt="">
-					</a>
-				</li>
+					<?php foreach ($partner as $v) { ?>
+						<li>
+							<a href="<?php echo $v['p_link']; ?>">
+								<img src="<?php echo $v['p_img']; ?>" alt="" title="<?php echo $v['p_title']; ?>">
+							</a>
+						</li>
+					<?php } ?>
 			</ul>
 		</div>
 		<footer>

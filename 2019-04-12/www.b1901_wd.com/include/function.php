@@ -360,8 +360,8 @@ copy($tmp,$spth.$fm.'.'.$se);
 }
 /**
  *数据库获取多条数据
- *@Paran $sql {$string} 
- * @return $list{array}
+ *@param $sql {$string} 
+ *@return $list{array}
  */
 
 function getAll($sql){
@@ -376,6 +376,22 @@ function getAll($sql){
     }
 }
 
+/**
+ *数据库获取单条数据
+ *@param $sql {$string} 
+ *@return $list{array}
+ */
+
+ 
+function getOne($sql){
+    $result = mysql_query($sql);
+
+    if($result && mysql_num_rows($result)>0){
+        return mysql_fetch_assoc($result);//有数据的数组
+    }else{
+        return array();//空数组
+    }
+}
 
 
 
